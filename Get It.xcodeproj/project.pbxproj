@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		0A2BF1F71E460F170002C5B7 /* optionsTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = optionsTextfield.swift; sourceTree = "<group>"; };
 		0A2BF1F91E4619230002C5B7 /* secureOptionsTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secureOptionsTextfield.swift; sourceTree = "<group>"; };
-		0A3153151CF37A660020DBB8 /* Get It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3153151CF37A660020DBB8 /* Grabbber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grabbber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3153181CF37A660020DBB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A31531A1CF37A660020DBB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A31531C1CF37A660020DBB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		0A3153161CF37A660020DBB8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A3153151CF37A660020DBB8 /* Get It.app */,
+				0A3153151CF37A660020DBB8 /* Grabbber.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A3153141CF37A660020DBB8 /* Get It */ = {
+		0A3153141CF37A660020DBB8 /* Grabbber */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A31533A1CF37A660020DBB8 /* Build configuration list for PBXNativeTarget "Get It" */;
+			buildConfigurationList = 0A31533A1CF37A660020DBB8 /* Build configuration list for PBXNativeTarget "Grabbber" */;
 			buildPhases = (
 				8EF4B3A8A704C93C8E5590DF /* [CP] Check Pods Manifest.lock */,
 				0A3153111CF37A660020DBB8 /* Sources */,
@@ -173,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = "Get It";
+			name = Grabbber;
 			productName = "Youtube-dl-GUI";
-			productReference = 0A3153151CF37A660020DBB8 /* Get It.app */;
+			productReference = 0A3153151CF37A660020DBB8 /* Grabbber.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Kevin De Koninck";
+				ORGANIZATIONNAME = "Jake Sulpice";
 				TargetAttributes = {
 					0A3153141CF37A660020DBB8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -214,7 +214,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A3153141CF37A660020DBB8 /* Get It */,
+				0A3153141CF37A660020DBB8 /* Grabbber */,
 			);
 		};
 /* End PBXProject section */
@@ -423,11 +423,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 70;
 				DEVELOPMENT_TEAM = FYYZM2LKBR;
 				INFOPLIST_FILE = "Get It/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakesulpice.Get-It";
+				MARKETING_VERSION = 0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakesulpice.Grabbber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -442,11 +444,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 70;
 				DEVELOPMENT_TEAM = FYYZM2LKBR;
 				INFOPLIST_FILE = "Get It/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakesulpice.Get-It";
+				MARKETING_VERSION = 0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakesulpice.Grabbber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -465,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A31533A1CF37A660020DBB8 /* Build configuration list for PBXNativeTarget "Get It" */ = {
+		0A31533A1CF37A660020DBB8 /* Build configuration list for PBXNativeTarget "Grabbber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A31533B1CF37A660020DBB8 /* Debug */,
