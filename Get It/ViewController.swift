@@ -1,17 +1,10 @@
 //
 //  ViewController.swift
-//  Youtube-dl-GUI
+//  yt-dlp-GUI
 //
 //  Created by Kevin De Koninck on 23/05/16.
 //  Copyright © 2016 Kevin De Koninck. All rights reserved.
 //
-
-
-//TODO: check if youtube-dl is installed on boot up: if brew ls --versions youtube-dl > /dev/null; then echo INSTALLED; else echo NOT INSTALLED; fi
-// if not, then disable all buttons except the package icon that will start a guide on how to install it.
-
-//TODO: regex check for urls in input field
-
 
 import Cocoa
 
@@ -81,7 +74,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func openDestinationFolderBtnClicked(_ sender: Any) {
-        _ = getIt.open(folder: UserDefaults.standard.value(forKey: OUTPUT_PATH) as! String)
+        getIt.open(folder: UserDefaults.standard.value(forKey: OUTPUT_PATH) as! String)
     }
 
     @IBAction func downloadButton(_ sender: AnyObject) {

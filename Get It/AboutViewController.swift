@@ -23,7 +23,7 @@ class AboutViewController: NSViewController {
     }
     
     @IBAction func githubBtnClicked(_ sender: Any) {
-        open(website: "https://kevin-de-koninck.github.io/Get-It/")
+        open(website: "https://github.com/jslpc/Grabbber")
     }
     
     @IBAction func supportedSitesBtnClicked(_ sender: Any) {
@@ -31,11 +31,11 @@ class AboutViewController: NSViewController {
     }
     
     @IBAction func githubYTBtnClicked(_ sender: Any) {
-        open(website: "https://github.com/rg3/youtube-dl")
+        open(website: "https://github.com/yt-dlp/yt-dlp")
     }
 
     @IBAction func donateBtnClicked(_ sender: Any) {
-        open(website: "https://rg3.github.io/youtube-dl/donations.html")
+        open(website: "https://github.com/yt-dlp/yt-dlp/blob/master/Collaborators.md#collaborators")
     }
 
     func open(website: String){

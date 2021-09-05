@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  Youtube-dl-GUI
+//  yt-dlp-GUI
 //
 //  Created by Kevin De Koninck on 28/01/2017.
 //  Copyright © 2017 Kevin De Koninck. All rights reserved.
@@ -11,7 +11,7 @@ import Cocoa
 
 // Command
 let EXPORT_PATH = "export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
-let DEFAULT_COMMAND = EXPORT_PATH + " && youtube-dl --prefer-ffmpeg --newline —yes-playlist —extract-audio —audio-format mp3 —audio-quality 5 —youtube-skip-dash-manifest —sub-format srt —ignore-errors --no-colorhttps://www.youtube.com/watch?v=LrAx8ZuCFyU -o ~/Downloads/‘%(title)s.%(ext)s’"
+let DEFAULT_COMMAND = EXPORT_PATH + " && yt-dlp --newline --yes-playlist --extract-audio --audio-format mp3 --audio-quality 5 --no-youtube-include-dash-manifest --sub-format srt --ignore-errors --no-colors -o ~/Downloads/‘%(title)s.%(ext)s’"
 let DEFAULT_OUTPUTPATH = "~/Downloads/"
 let REGEX_PATTERN = "(?<=^\\[download\\].)[0-9.]+\\%"
 

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Youtube-dl-GUI
+//  yt-dlp-GUI
 //
 //  Created by Kevin De Koninck on 23/05/16.
 //  Copyright © 2016 Kevin De Koninck. All rights reserved.
