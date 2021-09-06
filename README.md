@@ -1,7 +1,9 @@
-# Grabbber
+# Swift-DL
 A YT-DLP fork of the Youtube-DL GUI _Get It_ by Kevin DeKoninck.
 
 Very much a work in progress.
+
+## TODO: Update README.md
 
 ----
 
