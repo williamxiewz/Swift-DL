@@ -12,7 +12,7 @@ Please check off the following (_place an `x` between the brackets_) before subm
 - [] I have searched the issues page to see if this has already been addressed. 
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+A clear and concise description of what the bug is. Include the URL you are trying to download and the options you have selected in the settings pane.
 
 
 **To Reproduce**
@@ -37,11 +37,3 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
-
-
-**Output log**
-Please open a new Terminal window, run `cat /tmp/swiftdl_logs | pbcopy`, and hit enter to copy the log to your clipboard. Paste it below between the backticks. 
-
-```
-
-```
