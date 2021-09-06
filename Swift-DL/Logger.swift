@@ -9,8 +9,8 @@
 import Foundation
 
 class Logger {
-    let log_file: String = "/tmp/getit_logs"
-    let install_log_file: String = "/tmp/getit_install"
+    let log_file: String = "/tmp/swiftdl_logs"
+    let install_log_file: String = "/tmp/swiftdl_install"
     
     func reset() {
         let cmd = "echo '' > \(self.log_file)"
