@@ -8,8 +8,8 @@ assignees: ''
 ---
 
 Please check off the following (_place an `x` between the brackets_) before submitting a bug report:
-- [ ] I have confirmed that `yt-dlp` is updated to the latest version.
-- [ ] I have searched the issues page to see if this has already been addressed. 
+- [] I have confirmed that `yt-dlp` is updated to the latest version.
+- [] I have searched the issues page to see if this has already been addressed. 
 
 **Describe the bug**
 A clear and concise description of what the bug is.
