@@ -37,3 +37,11 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+
+
+**Output log**
+Please open a new Terminal window, run `cat /tmp/swiftdl_logs | pbcopy`, and hit enter to copy the log to your clipboard. Paste it below between the backticks. 
+
+```
+
+```
