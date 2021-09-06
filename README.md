@@ -8,6 +8,11 @@ Swift-DL is a YT-DLP clone of the Youtube-DL GUI [_Get It_](https://github.com/K
 
 **Note**: Swift-DL requires _Homebrew_. The required dependencies will be installed with _Homebrew_.
 
+# TODO
+
+- [ ] Add native dark mode with dynamic color scheme
+- [ ] Full support for SponsorBlock
+
 # Installation
 
 Download it [here](https://github.com/jslpc/Swift-DL/releases/), unzip it and open it. When prompted, move it to the Applications folder.
