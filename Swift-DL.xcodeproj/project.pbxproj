@@ -22,8 +22,23 @@
 		0AAC75B61E3E24800086BB87 /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC75B51E3E24800086BB87 /* DownloadButton.swift */; };
 		0AAC75B81E3E25820086BB87 /* GrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC75B71E3E25820086BB87 /* GrayButton.swift */; };
 		0AFE6EDE20ACB49E002C7693 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE6EDD20ACB49E002C7693 /* Logger.swift */; };
-		ECA732B50C4C6E20A16D72C0 /* Pods_Swift_DL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C397E4A7E9D6D070DCAFD3E4 /* Pods_Swift_DL.framework */; };
+		23D1885326E5FE7300E8A954 /* Pods_Swift_DL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C397E4A7E9D6D070DCAFD3E4 /* Pods_Swift_DL.framework */; };
+		23D1885426E5FE7300E8A954 /* Pods_Swift_DL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C397E4A7E9D6D070DCAFD3E4 /* Pods_Swift_DL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23D1885526E5FE7300E8A954 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23D1885426E5FE7300E8A954 /* Pods_Swift_DL.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A2BF1F71E460F170002C5B7 /* optionsTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = optionsTextfield.swift; sourceTree = "<group>"; };
@@ -53,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA732B50C4C6E20A16D72C0 /* Pods_Swift_DL.framework in Frameworks */,
+				23D1885326E5FE7300E8A954 /* Pods_Swift_DL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +177,7 @@
 				0A3153121CF37A660020DBB8 /* Frameworks */,
 				0A3153131CF37A660020DBB8 /* Resources */,
 				0F70C1352502C613EAF70E8D /* [CP] Embed Pods Frameworks */,
+				23D1885526E5FE7300E8A954 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
