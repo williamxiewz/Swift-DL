@@ -588,11 +588,11 @@
                                     </tabViewItem>
                                     <tabViewItem label="Video" identifier="2" id="AX8-fr-5La">
                                         <view key="view" id="hPO-YD-p1n">
-                                            <rect key="frame" x="10" y="33" width="438" height="123"/>
+                                            <rect key="frame" x="10" y="33" width="438" height="124"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField toolTip="Video format code." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NjN-y1-bSl">
-                                                    <rect key="frame" x="15" y="104" width="86" height="16"/>
+                                                    <rect key="frame" x="15" y="105" width="86" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Video format:" id="OHU-gK-tH6">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -600,7 +600,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Download all available video formats." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKg-wC-j4n">
-                                                    <rect key="frame" x="15" y="80" width="136" height="16"/>
+                                                    <rect key="frame" x="15" y="81" width="136" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Download all formats:" id="fbn-st-Mbt">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -608,7 +608,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Prefer free video formats unless a specific one is requested." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-Sg-jRv">
-                                                    <rect key="frame" x="15" y="56" width="123" height="16"/>
+                                                    <rect key="frame" x="15" y="57" width="123" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Prefer free formats:" id="Z8v-o1-T1j">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -616,15 +616,24 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Do not download the DASH manifests and related data on YouTube videos." horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reo-hp-tuX">
-                                                    <rect key="frame" x="15" y="32" width="123" height="16"/>
+                                                    <rect key="frame" x="15" y="33" width="123" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Skip dash manifest:" id="C5D-85-wjG">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
+                                                <textField toolTip="Do not download the DASH manifests and related data on YouTube videos." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" id="zXF-eV-S4A">
+                                                    <rect key="frame" x="15" y="9" width="174" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Remove sponsored content:" id="W4A-ZZ-9kI">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
                                                 <popUpButton toolTip="Video format code." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-eG-ysb">
-                                                    <rect key="frame" x="232" y="98" width="207" height="25"/>
+                                                    <rect key="frame" x="232" y="99" width="207" height="25"/>
                                                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="oE5-Sb-yT5" id="NMF-8y-sbu">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="menu"/>
@@ -676,21 +685,27 @@
                                                     </popUpButtonCell>
                                                 </popUpButton>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="j4M-HZ-gnC" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="80" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="81" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="oKa-ew-ji5"/>
                                                     </constraints>
                                                 </customView>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="DEL-fZ-Ac1" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="56" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="57" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="ok1-lD-5Lt"/>
                                                     </constraints>
                                                 </customView>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="e20-D7-JjB" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="32" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="33" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="izl-Ap-3BH"/>
+                                                    </constraints>
+                                                </customView>
+                                                <customView appearanceType="aqua" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMQ-kC-lnt" userLabel="Remove sponsored content" customClass="ITSwitch">
+                                                    <rect key="frame" x="235" y="9" width="28" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="28" id="ds9-T2-moY"/>
                                                     </constraints>
                                                 </customView>
                                             </subviews>
@@ -721,11 +736,11 @@
                                     </tabViewItem>
                                     <tabViewItem label="Playlist" identifier="1" id="qOo-8r-eIm">
                                         <view key="view" id="vr5-H3-pb1">
-                                            <rect key="frame" x="10" y="33" width="438" height="123"/>
+                                            <rect key="frame" x="10" y="33" width="438" height="124"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField toolTip="Download the playlist, if the URL refers to a video and a playlist." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L8q-Ja-leU">
-                                                    <rect key="frame" x="15" y="104" width="114" height="16"/>
+                                                    <rect key="frame" x="15" y="105" width="114" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Download playlist:" id="1hL-zc-Xpv">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -733,7 +748,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Download playlist videos in reverse order." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IuA-2S-4HD">
-                                                    <rect key="frame" x="15" y="80" width="103" height="16"/>
+                                                    <rect key="frame" x="15" y="81" width="103" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Reverse playlist:" id="vSe-I0-6aZ">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -741,7 +756,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Playlist video to start at (default is 1)." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAC-uf-GyV">
-                                                    <rect key="frame" x="15" y="53" width="122" height="15"/>
+                                                    <rect key="frame" x="15" y="54" width="122" height="15"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Start/Stop at video:" id="lMd-M7-jrK">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -749,7 +764,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Playlist video items to download. Specify indices of the videos in the playlist. E.g. 1-3,7,10-13" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="we5-Gd-OnQ">
-                                                    <rect key="frame" x="15" y="31" width="112" height="14"/>
+                                                    <rect key="frame" x="15" y="31" width="112" height="15"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Download videos:" id="fzg-fV-BaB">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -757,7 +772,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Playlist video to start at (default is 1)." verticalHuggingPriority="749" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-aK-Xnk" customClass="optionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="235" y="50" width="90" height="21"/>
+                                                    <rect key="frame" x="235" y="51" width="90" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="86" id="ubc-Nf-Hl4"/>
                                                     </constraints>
@@ -769,7 +784,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Playlist video items to download. Specify indices of the videos in the playlist. E.g. 1-3,7,10-13" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nec-cA-tY9" customClass="optionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="235" y="26" width="200" height="19"/>
+                                                    <rect key="frame" x="235" y="26" width="200" height="20"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" id="f03-ni-3zk">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -777,19 +792,19 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="3sc-D4-GIC" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="104" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="105" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="YyG-zW-JKS"/>
                                                     </constraints>
                                                 </customView>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="BSB-HQ-y2M" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="80" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="81" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="wzv-kP-un7"/>
                                                     </constraints>
                                                 </customView>
                                                 <textField toolTip="Playlist video to end at (default is last)." verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWE-3Z-NoL" customClass="optionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="345" y="50" width="90" height="21"/>
+                                                    <rect key="frame" x="345" y="51" width="90" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="86" id="SJz-ds-dVW"/>
                                                     </constraints>
@@ -801,7 +816,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Download the playlist, if the URL refers to a video and a playlist." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUF-H3-yR5">
-                                                    <rect key="frame" x="331" y="54" width="15" height="16"/>
+                                                    <rect key="frame" x="331" y="55" width="15" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="11" id="Ecj-0O-XH6"/>
                                                     </constraints>
@@ -1060,6 +1075,7 @@
                         <outlet property="outputTemplate" destination="GVv-b9-3xw" id="HYf-7q-nmG"/>
                         <outlet property="password" destination="XOo-FL-D72" id="j2n-9P-Ar0"/>
                         <outlet property="preferFreeFormats" destination="DEL-fZ-Ac1" id="gRy-kd-ary"/>
+                        <outlet property="removeSponsoredContent" destination="hMQ-kC-lnt" id="MLK-7I-5Iw"/>
                         <outlet property="reversePlaylist" destination="BSB-HQ-y2M" id="XSr-xO-NI6"/>
                         <outlet property="selectedPath" destination="jzS-2Q-oeP" id="8uR-kn-B5K"/>
                         <outlet property="skipDashManifest" destination="e20-D7-JjB" id="31L-95-qQm"/>

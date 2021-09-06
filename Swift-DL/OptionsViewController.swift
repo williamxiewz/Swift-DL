@@ -33,6 +33,7 @@ class OptionsViewController: NSViewController {
     @IBOutlet weak var downloadAllFormats: ITSwitch!
     @IBOutlet weak var preferFreeFormats: ITSwitch!
     @IBOutlet weak var skipDashManifest: ITSwitch!
+    @IBOutlet weak var removeSponsoredContent: ITSwitch!
     
     //subtitles tab
     @IBOutlet weak var downloadSubs: ITSwitch!
@@ -68,6 +69,7 @@ class OptionsViewController: NSViewController {
         downloadAllFormats.tintColor = redColor
         preferFreeFormats.tintColor = redColor
         skipDashManifest.tintColor = redColor
+        removeSponsoredContent.tintColor = redColor
         downloadSubs.tintColor = redColor
         downloadAutoSubs.tintColor = redColor
         downloadAllSubs.tintColor = redColor
@@ -159,6 +161,7 @@ class OptionsViewController: NSViewController {
         settingsDict["downloadAllFormats"] = String(downloadAllFormats.checked) == "true" ? "1" : "0"
         settingsDict["preferFreeFormats"] = String(preferFreeFormats.checked) == "true" ? "1" : "0"
         settingsDict["skipDashManifest"] = String(skipDashManifest.checked) == "true" ? "1" : "0"
+        settingsDict["removeSponsoredContent"] = String(removeSponsoredContent.checked) == "true" ? "1" : "0"
         settingsDict["downloadSubs"] = String(downloadSubs.checked) == "true" ? "1" : "0"
         settingsDict["downloadAutoSubs"] = String(downloadAutoSubs.checked) == "true" ? "1" : "0"
         settingsDict["downloadAllSubs"] = String(downloadAllSubs.checked) == "true" ? "1" : "0"
@@ -220,6 +223,9 @@ class OptionsViewController: NSViewController {
             
             if let val = arr["skipDashManifest"] { skipDashManifest.checked = val == "1" ? true : false }
             else { skipDashManifest.checked = DEFAULT_SETTINGS["skipDashManifest"]! == "1" ? true : false }
+            
+            if let val = arr["removeSponsoredContent"] { removeSponsoredContent.checked = val == "1" ? true : false }
+            else { removeSponsoredContent.checked = DEFAULT_SETTINGS["removeSponsoredContent"]! == "1" ? true : false }
             
             if let val = arr["downloadSubs"] { downloadSubs.checked = val == "1" ? true : false }
             else { downloadSubs.checked = DEFAULT_SETTINGS["downloadSubs"]! == "1" ? true : false }
@@ -301,6 +307,7 @@ class OptionsViewController: NSViewController {
         if downloadAllFormats.checked { command += " --all-formats" }
         if preferFreeFormats.checked { command += " --prefer-free-formats " }
         if skipDashManifest.checked { command += " --youtube-skip-dash-manifest" }
+        if removeSponsoredContent.checked { command += " --sponsorblock-remove sponsor" }
         if downloadSubs.checked { command += " --write-sub" }
         if downloadAutoSubs.checked { command += " --write-auto-sub" }
         if downloadAllSubs.checked { command += " --all-subs" }

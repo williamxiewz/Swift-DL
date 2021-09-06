@@ -31,6 +31,7 @@ let DEFAULT_SETTINGS = [    "maxFileSize"       :   "",
                             "downloadAllFormats":   "0", //bool
                             "preferFreeFormats" :   "0", //bool
                             "skipDashManifest"  :   "1", //bool
+                            "removeSponsoredContent"  :   "1", //bool
                             "downloadSubs"      :   "0", //bool
                             "downloadAutoSubs"  :   "0", //bool
                             "downloadAllSubs"   :   "0", //bool
