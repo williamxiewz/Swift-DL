@@ -13,9 +13,9 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Get It" id="gI8-yL-yYv">
+                            <menuItem title="Swift-DL" id="gI8-yL-yYv">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Get It" id="Ecw-XV-VuA">
+                                <menu key="submenu" title="Swift-DL" id="Ecw-XV-VuA">
                                     <items>
                                         <menuItem title="About Application" id="zPH-IZ-HFS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -191,7 +191,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Swift_DL" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Get It" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                    <window key="window" title="Swift-DL" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="IQv-IB-iLA" userLabel="Swift-DL">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
                         <rect key="contentRect" x="316" y="275" width="234" height="61"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -211,21 +211,21 @@
         <scene sceneID="XQT-vz-DN7">
             <objects>
                 <viewController id="Igh-3R-yf8" customClass="OptionsViewController" customModule="Swift_DL" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" appearanceType="aqua" id="JYB-pR-edy">
-                        <rect key="frame" x="0.0" y="0.0" width="484" height="221"/>
+                    <view key="view" autoresizesSubviews="NO" appearanceType="aqua" misplaced="YES" id="JYB-pR-edy">
+                        <rect key="frame" x="0.0" y="0.0" width="484" height="226"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tabView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-ew-X1n">
-                                <rect key="frame" x="13" y="48" width="458" height="169"/>
+                            <tabView appearanceType="aqua" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-ew-X1n">
+                                <rect key="frame" x="13" y="48" width="458" height="170"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="General" identifier="1" id="6h1-Wr-GoT">
                                         <view key="view" id="TLS-HV-qXB">
-                                            <rect key="frame" x="10" y="33" width="438" height="123"/>
+                                            <rect key="frame" x="10" y="33" width="438" height="124"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField toolTip="Do not download any videos larger than... [MB]" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSv-0K-HSK">
-                                                    <rect key="frame" x="15" y="104" width="154" height="16"/>
+                                                    <rect key="frame" x="15" y="106" width="154" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Maximum file size in MB:" id="4pd-DK-fsY">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -233,7 +233,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Continue on download errors, for example to skip unavailable videos in a playlist." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUd-jr-IsJ">
-                                                    <rect key="frame" x="15" y="80" width="86" height="16"/>
+                                                    <rect key="frame" x="15" y="82" width="86" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Ignore errors:" id="9Dm-Cl-vRu">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -241,7 +241,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-5l-KHe">
-                                                    <rect key="frame" x="15" y="55" width="121" height="17"/>
+                                                    <rect key="frame" x="15" y="57" width="121" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Output destination:" id="UPa-PR-gmr">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -249,7 +249,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-h0-AJH">
-                                                    <rect key="frame" x="15" y="33" width="94" height="14"/>
+                                                    <rect key="frame" x="15" y="33" width="94" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Output format:" id="Z16-Ey-7AP">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -257,7 +257,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GVv-b9-3xw">
-                                                    <rect key="frame" x="232" y="26" width="207" height="25"/>
+                                                    <rect key="frame" x="232" y="26" width="207" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="200" id="ldN-ch-fdo"/>
                                                     </constraints>
@@ -274,7 +274,7 @@
                                                     </popUpButtonCell>
                                                 </popUpButton>
                                                 <textField toolTip="Do not download any videos larger than... [MB]" focusRingType="none" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-rq-V4S" customClass="optionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="235" y="102" width="200" height="20"/>
+                                                    <rect key="frame" x="235" y="104" width="200" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="196" id="PCe-th-M0d"/>
                                                     </constraints>
@@ -289,13 +289,13 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="4pH-QS-9z0" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="80" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="82" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="xF8-yL-TSH"/>
                                                     </constraints>
                                                 </customView>
                                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="E2g-pg-Lkd">
-                                                    <rect key="frame" x="237" y="51" width="24" height="25"/>
+                                                    <rect key="frame" x="237" y="53" width="24" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="R2X-VN-c26"/>
                                                     </constraints>
@@ -308,7 +308,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-2Q-oeP">
-                                                    <rect key="frame" x="267" y="56" width="83" height="16"/>
+                                                    <rect key="frame" x="267" y="58" width="83" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="~/Downloads" id="hQv-OP-7CA">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -348,11 +348,11 @@
                                     </tabViewItem>
                                     <tabViewItem label="Authentication" identifier="1" id="nQe-Ig-lpx">
                                         <view key="view" id="feV-YF-baS">
-                                            <rect key="frame" x="10" y="33" width="438" height="123"/>
+                                            <rect key="frame" x="10" y="33" width="438" height="124"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField toolTip="Login with this account ID." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-lq-buu">
-                                                    <rect key="frame" x="15" y="102" width="70" height="16"/>
+                                                    <rect key="frame" x="15" y="103" width="70" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username:" id="rde-Ek-tE0">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -360,7 +360,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Account password." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPw-pm-uzD">
-                                                    <rect key="frame" x="15" y="78" width="66" height="16"/>
+                                                    <rect key="frame" x="15" y="79" width="66" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password:" id="3dl-Oh-K3n">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -368,7 +368,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Two-factor auth code." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCZ-p4-s9r">
-                                                    <rect key="frame" x="15" y="54" width="126" height="16"/>
+                                                    <rect key="frame" x="15" y="55" width="126" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="2-factor auth. code:" id="5Pl-g9-mvf">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -376,7 +376,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Use .netrc authentication data." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-RJ-wme">
-                                                    <rect key="frame" x="15" y="30" width="43" height="16"/>
+                                                    <rect key="frame" x="15" y="31" width="43" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title=".netrc:" id="mVl-wb-Dwj">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -384,7 +384,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Video password (vimeo, smotri, youku)." horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XT7-mz-0Ty">
-                                                    <rect key="frame" x="15" y="6" width="105" height="16"/>
+                                                    <rect key="frame" x="15" y="7" width="105" height="16"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Video password:" id="Ccx-Sr-IKu">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -392,7 +392,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField toolTip="Login with this account ID." verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBF-vk-0RT" customClass="optionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="233" y="99" width="204" height="22"/>
+                                                    <rect key="frame" x="233" y="100" width="204" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" id="rks-dF-EiC">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -400,7 +400,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <secureTextField toolTip="Account password." verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-FL-D72" customClass="secureOptionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="235" y="76" width="200" height="20"/>
+                                                    <rect key="frame" x="235" y="77" width="200" height="20"/>
                                                     <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" usesSingleLineMode="YES" id="cXC-NM-zft">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -411,7 +411,7 @@
                                                     </secureTextFieldCell>
                                                 </secureTextField>
                                                 <secureTextField toolTip="Two-factor auth code." verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oKK-rG-X7n" customClass="secureOptionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="235" y="51" width="200" height="22"/>
+                                                    <rect key="frame" x="235" y="52" width="200" height="22"/>
                                                     <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" usesSingleLineMode="YES" id="tsX-JF-j9l">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -422,7 +422,7 @@
                                                     </secureTextFieldCell>
                                                 </secureTextField>
                                                 <secureTextField toolTip="Video password (vimeo, smotri, youku)." verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7z3-Y1-nMX" customClass="secureOptionsTextfield" customModule="Swift_DL" customModuleProvider="target">
-                                                    <rect key="frame" x="235" y="4" width="200" height="20"/>
+                                                    <rect key="frame" x="235" y="5" width="200" height="20"/>
                                                     <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" usesSingleLineMode="YES" id="nh1-q6-ChQ">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -433,7 +433,7 @@
                                                     </secureTextFieldCell>
                                                 </secureTextField>
                                                 <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="oFp-TW-xIO" customClass="ITSwitch">
-                                                    <rect key="frame" x="235" y="30" width="28" height="16"/>
+                                                    <rect key="frame" x="235" y="31" width="28" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="tHP-Af-pND"/>
                                                     </constraints>
@@ -971,10 +971,10 @@
                                 </tabViewItems>
                             </tabView>
                             <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="pNa-9O-W4T" customClass="progressView" customModule="Swift_DL" customModuleProvider="target">
-                                <rect key="frame" x="8" y="8" width="468" height="205"/>
+                                <rect key="frame" x="8" y="8" width="468" height="207"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="01C-M7-gNR">
-                                        <rect key="frame" x="111" y="84" width="247" height="38"/>
+                                        <rect key="frame" x="111" y="85" width="247" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="243" id="9rB-zr-LQr"/>
                                             <constraint firstAttribute="height" constant="38" id="XHs-gH-N9g"/>
@@ -1372,20 +1372,6 @@ Swift-DL supports.</string>
                                             <rect key="frame" x="10" y="33" width="404" height="214"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <button translatesAutoresizingMaskIntoConstraints="NO" id="zah-bb-HCF">
-                                                    <rect key="frame" x="26" y="17" width="352" height="92"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="92" id="Xmx-gd-J8T"/>
-                                                        <constraint firstAttribute="width" constant="352" id="aWm-bf-R5X"/>
-                                                    </constraints>
-                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="github" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="DKn-rC-Jim">
-                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                        <font key="font" metaFont="system"/>
-                                                    </buttonCell>
-                                                    <connections>
-                                                        <action selector="githubBtnClicked:" target="22z-Dn-UPJ" id="xuE-MQ-WwG"/>
-                                                    </connections>
-                                                </button>
                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1up-fQ-OWR">
                                                     <rect key="frame" x="18" y="122" width="369" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -1410,6 +1396,20 @@ For more information, visit the repository on GitHub.</string>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </textFieldCell>
                                                 </textField>
+                                                <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zah-bb-HCF">
+                                                    <rect key="frame" x="26" y="31" width="352" height="87"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="87" id="Xmx-gd-J8T"/>
+                                                        <constraint firstAttribute="width" constant="352" id="aWm-bf-R5X"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="github" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="DKn-rC-Jim">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="githubBtnClicked:" target="22z-Dn-UPJ" id="xuE-MQ-WwG"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gok-WD-mJe" firstAttribute="centerX" secondItem="Z7n-de-qmn" secondAttribute="centerX" id="SNE-Za-pzc"/>
