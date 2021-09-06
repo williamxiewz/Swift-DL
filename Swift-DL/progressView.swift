@@ -1,9 +1,9 @@
 //
 //  progressView.swift
-//  Get It
+//  Swift-DL
 //
-//  Created by Kevin De Koninck on 17/04/2018.
-//  Copyright © 2018 Kevin De Koninck. All rights reserved.
+//  Copyright © 2021 Jake Sulpice. All rights reserved.
+//  Based on Get-It by Kevin De Koninck.
 //
 
 import Cocoa

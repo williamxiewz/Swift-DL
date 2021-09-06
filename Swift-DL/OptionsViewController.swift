@@ -1,9 +1,9 @@
 //
 //  OptionsViewController.swift
-//  yt-dlp-GUI
+//  Swift-DL
 //
-//  Created by Kevin De Koninck on 28/01/2017.
-//  Copyright © 2017 Kevin De Koninck. All rights reserved.
+//  Copyright © 2021 Jake Sulpice. All rights reserved.
+//  Based on Get-It by Kevin De Koninck.
 //
 
 import Cocoa
@@ -62,19 +62,19 @@ class OptionsViewController: NSViewController {
         self.view.wantsLayer = true
         
         //Switch color
-        ignoreErrors.tintColor = blueColor
-        extractAudio.tintColor = blueColor
-        keepVideo.tintColor = blueColor
-        downloadAllFormats.tintColor = blueColor
-        preferFreeFormats.tintColor = blueColor
-        skipDashManifest.tintColor = blueColor
-        downloadSubs.tintColor = blueColor
-        downloadAutoSubs.tintColor = blueColor
-        downloadAllSubs.tintColor = blueColor
-        embedSubs.tintColor = blueColor
-        downloadPlaylist.tintColor = blueColor
-        reversePlaylist.tintColor = blueColor
-        netrc.tintColor = blueColor
+        ignoreErrors.tintColor = redColor
+        extractAudio.tintColor = redColor
+        keepVideo.tintColor = redColor
+        downloadAllFormats.tintColor = redColor
+        preferFreeFormats.tintColor = redColor
+        skipDashManifest.tintColor = redColor
+        downloadSubs.tintColor = redColor
+        downloadAutoSubs.tintColor = redColor
+        downloadAllSubs.tintColor = redColor
+        embedSubs.tintColor = redColor
+        downloadPlaylist.tintColor = redColor
+        reversePlaylist.tintColor = redColor
+        netrc.tintColor = redColor
         
         // progress view
         installProgressView.isHidden = true

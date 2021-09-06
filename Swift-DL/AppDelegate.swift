@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  yt-dlp-GUI
+//  Swift-DL
 //
-//  Created by Kevin De Koninck on 23/05/16.
-//  Copyright © 2016 Kevin De Koninck. All rights reserved.
+//  Copyright © 2021 Jake Sulpice. All rights reserved.
+//  Based on Get-It by Kevin De Koninck.
 //
 
 import Cocoa

@@ -1,9 +1,9 @@
 //
 //  Constants.swift
-//  yt-dlp-GUI
+//  Swift-DL
 //
-//  Created by Kevin De Koninck on 28/01/2017.
-//  Copyright © 2017 Kevin De Koninck. All rights reserved.
+//  Copyright © 2021 Jake Sulpice. All rights reserved.
+//  Based on Get-It by Kevin De Koninck.
 //
 
 import Foundation
@@ -16,7 +16,7 @@ let DEFAULT_OUTPUTPATH = "~/Downloads/"
 let REGEX_PATTERN = "(?<=^\\[download\\].)[0-9.]+\\%"
 
 //Color
-var blueColor = NSColor.init(red: 0/255, green: 199/255, blue: 190/255, alpha: 1)
+var redColor = NSColor.init(red: 255/255, green: 59/255, blue: 48/255, alpha: 1)
 
 // Settings
 let DEFAULT_SETTINGS = [    "maxFileSize"       :   "",

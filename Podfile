@@ -1,4 +1,5 @@
-target ‘Get It’ do
+project 'Swift-DL.xcodeproj'
+target 'Swift-DL' do
   use_frameworks!
   pod 'ITSwitch'
   pod 'STPrivilegedTask'

@@ -1,9 +1,9 @@
 //
 //  optionsTextfield.swift
-//  Get It
+//  Swift-DL
 //
-//  Created by Kevin De Koninck on 04/02/2017.
-//  Copyright © 2017 Kevin De Koninck. All rights reserved.
+//  Copyright © 2021 Jake Sulpice. All rights reserved.
+//  Based on Get-It by Kevin De Koninck.
 //
 
 import Cocoa
@@ -25,7 +25,7 @@ class optionsTextfield: NSTextField {
         //underline
         let border = CALayer()
         let width = CGFloat(1.0)
-        border.borderColor = blueColor.cgColor
+        border.borderColor = redColor.cgColor
         border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
         border.borderWidth = width
         self.layer?.addSublayer(border)

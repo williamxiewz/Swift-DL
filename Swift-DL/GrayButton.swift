@@ -1,9 +1,9 @@
 //
 //  GrayButton.swift
-//  Get It
+//  Swift-DL
 //
-//  Created by Kevin De Koninck on 29/01/2017.
-//  Copyright © 2017 Kevin De Koninck. All rights reserved.
+//  Copyright © 2021 Jake Sulpice. All rights reserved.
+//  Based on Get-It by Kevin De Koninck.
 //
 
 import Cocoa
