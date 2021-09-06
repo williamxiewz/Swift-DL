@@ -1,29 +1,23 @@
 # Swift-DL
-A YT-DLP fork of the Youtube-DL GUI _Get It_ by Kevin DeKoninck.
 
-Very much a work in progress.
-
-## TODO: Update README.md
-
-----
-
-# Get It
 A macOS video/audio downloader. Think of it as a youtube downloader that works on many sites.
 
-<img src="https://github.com/Kevin-De-Koninck/Get-It/blob/master/ReadMe%20Resources/MainWindow.png?raw=true" height="400" /><img src="https://github.com/Kevin-De-Koninck/Get-It/blob/master/ReadMe%20Resources/Settings.png?raw=true" height="400" />
+Swift-DL is a YT-DLP clone of the Youtube-DL GUI [_Get It_](https://github.com/Kevin-De-Koninck/Get-It) that includes additional bug fixes.
 
-**Note**: Get It requires _Homebrew_. The required dependencies will be installed with _Homebrew_.
+<img src="https://github.com/jslpc/Swift-DL/blob/master/ReadMe%20Resources/MainWindow.png?raw=true" height="400" /><img src="https://github.com/jslpc/Swift-DL/blob/master/ReadMe%20Resources/Settings.png?raw=true" height="400" />
+
+**Note**: Swift-DL requires _Homebrew_. The required dependencies will be installed with _Homebrew_.
 
 # Installation
 
-Download it [here](https://github.com/jslpc/Grabbber/releases/), unzip it and open it.
-To install the dependencies required to run the software, please open the settings in the app and click on 'Install/update software'. This will not update Get It, but it will update all dependencies.
+Download it [here](https://github.com/jslpc/Swift-DL/releases/), unzip it and open it. When prompted, move it to the Applications folder.
+To install the dependencies required to run the software, please open the settings in the app and click on 'Install/update software'. This will not update Swift-DL, but it will update all dependencies.
 
-## dependencies
+## Dependencies
 
 ### Install or Update
 
-Get It requires the following dependencies which you can install and/or update using the command line (see below).  
+Swift-DL requires the following dependencies which you can install and/or update using the command line (see below).  
 The following list is required:
 - xcode-select
 - brew
@@ -34,44 +28,19 @@ The following list is required:
 - libav
 - ffmpeg
 
-To install the dependencies, open the Terminal app and paste the following commands to install and/or update the respective tools.
+To install the dependencies, open the Terminal app and paste the following command to install and/or update the respective tools in one go.
 
-**xCode command line tools**
 ``` bash
-if ! xcode-select -v &> /dev/null; then xcode-select --install; fi
-``` 
-**Homebrew**
-``` bash
-if brew -v &> /dev/null; then brew update; else echo /usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'; fi
-``` 
-**Python**
-``` bash
-if brew ls --versions python &> /dev/null; then brew upgrade python; else brew install python; brew link python; fi
-``` 
-**Python 3**
-``` bash
-if brew ls --versions python3 &> /dev/null; then brew upgrade python3; else brew install python3; fi
-``` 
-**PyCrypt**
-``` bash
-if pip2.7 list | grep -i pycrypt &> /dev/null; then pip2.7 install pycrypt --upgrade; else pip2.7 install pycrypt; fi
-``` 
-**Youtube-dl**
-``` bash
-if yt-dlp --version &> /dev/null; then brew upgrade yt-dlp; else brew install yt-dlp/taps/yt-dlp; fi
-``` 
-**LibAV**
-``` bash
-if brew list libav &> /dev/null; then brew upgrade libav; else brew install libav; fi
-``` 
-**FFMPEG**
-``` bash
-if brew list ffmpeg &> /dev/null; then brew upgrade ffmpeg; else brew install ffmpeg; fi
+if ! xcode-select -v &> /dev/null; then xcode-select --install; fi; if brew -v &> /dev/null; then brew update; else echo /usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'; fi; if brew ls --versions python &> /dev/null; then brew upgrade python; else brew install python; brew link python; fi; if brew ls --versions python3 &> /dev/null; then brew upgrade python3; else brew install python3; fi; if pip2.7 list | grep -i pycrypt &> /dev/null; then pip2.7 install pycrypt --upgrade; else pip2.7 install pycrypt; fi; if yt-dlp --version &> /dev/null; then brew upgrade yt-dlp; else brew install yt-dlp/taps/yt-dlp; fi; if brew list libav &> /dev/null; then brew upgrade libav; else brew install libav; fi; if brew list ffmpeg &> /dev/null; then brew upgrade ffmpeg; else brew install ffmpeg; fi
 ```
 
 ### Uninstall
 
-Each component can be installed **if** it is not used by another program on your Mac. To completely clean everything that is brew related:
+To uninstall Swift-DL, simply trash the application from Finder.
+
+Each component can be uninstalled **if** it is not used by another program on your Mac. To remove each separate dependency, run `brew uninstall [component]`, replacing `[component]` with the name of the dependency you no longer need.
+
+To completely clean everything that is brew related:
 https://github.com/Homebrew/install#uninstall-homebrew
 
 To uninstall the developer tools:
@@ -81,29 +50,28 @@ sudo rm -rf /Library/Developer/CommandLineTools
 
 # About
 
-Get It will download audio and/or movies from many websites such as YouTube, BBC, Instagram, ... It's a GUI round the popular YouTube-DL command-line program but with an easy to use interface.
-It will save your settings dynamically or you can restore the default settings. The default settings will download the audio from a video, convert it to an MP3 and save it to you downloads folder. This was, in my opinion, the mostly used setting.
+Swift-DL will download audio and/or video from many websites such as YouTube, BBC, Instagram, and many more. It's a GUI built on the YT-DLP command-line tool, which is itself a fork of the popular program YouTube-DL, but with a clean and easy to use user interface.
 
+It will save your settings dynamically or you can restore to the default settings. The default settings will download the audio from a video, convert it to an MP3 and save it to you downloads folder. This seems to be the most common use for using YT-DLP/YouTube-DL, though downloading the entire video is also supported in the settings pane.
 
 # Common issues
 
-Because this is a simple GUI wrapper for the `youtube-dl` command, most issues can be traced back to the binary. The following common issues exists and can be solved easily:
-- **'Something went wrong'**: An example can be found in [#25](https://github.com/Kevin-De-Koninck/Get-It/issues/25). The can usually be resolved by simply updating youtube-dl as follows: `sudo youtube-dl --update`.
+Because this is a simple GUI wrapper for the `yt-dlp` command, most issues can be traced back to the binary. The can usually be resolved by simply updating YT-DLP as follows: `sudo yt-dlp --update`.
 
+It is a known issue that sometimes you will see an error message that the download has failed. I'm working on a quick fix for this, but most of the time it completes the download perfectly. Be sure to check your Downloads folder for the audio/video file(s) to see if it actually worked properly before creating a new issue.
 
-# Submit a bug
+# Bug reports and feature requests
 
-You can submit a bug here on Github. Please provide the following:
-- The URL(s) that you try to download.
-- Your settings.
+Use the [Issues](https://github.com/jslpc/Swift-DL/issues) page to submit any bug reports. Please provide all information requested from the _Bug report_ issue template.
 
-Also, open the Terminal app on your MacBook and issue the following command:
-```
-cat /tmp/getit_logs
-```
+If you have any suggestions or feature requests, use the _Feature requests_ issue template.
 
-Provide the output of the first command of you have an issue while installing the required software and provide the output of the second command of you have problems while downloading your URLs.
+Feel free to ask any other questions that don't fit either template, but make sure to be as descriptive as possible to ensure the best answer.
 
 # THANKS
 
-Thanks to [youtube-dl](https://github.com/rg3/youtube-dl) authors for creating such an amazing tool.
+The [youtube-dl](https://github.com/rg3/youtube-dl) authors for creating such an amazing tool.
+
+The devs of [yt-dlp](https://github.com/yt-dlp/yt-dlp) for improving upon it and actively maintaining the fork that this program is built on.
+
+[Get-It](https://github.com/Kevin-De-Koninck/Get-It) developer Kevin De Koninck for building the original app that Swift-DL was cloned from.
