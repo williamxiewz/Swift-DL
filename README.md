@@ -1,3 +1,10 @@
+# Grabbber
+A YT-DLP fork of the Youtube-DL GUI _Get It_ by Kevin DeKoninck.
+
+Very much a work in progress.
+
+----
+
 # Get It
 A macOS video/audio downloader. Think of it as a youtube downloader that works on many sites.
 
@@ -7,7 +14,7 @@ A macOS video/audio downloader. Think of it as a youtube downloader that works o
 
 # Installation
 
-Download it [here](https://github.com/Kevin-De-Koninck/Get-It/releases/download/v0.6.1/Get.It.app.zip), unzip it and open it.
+Download it [here](https://github.com/jslpc/Grabbber/releases/), unzip it and open it.
 To install the dependencies required to run the software, please open the settings in the app and click on 'Install/update software'. This will not update Get It, but it will update all dependencies.
 
 ## dependencies
