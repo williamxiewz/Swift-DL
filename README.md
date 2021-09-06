@@ -28,7 +28,7 @@ The following list is required:
 - python
 - python3
 - pycrypt
-- youtube-dl
+- yt-dlp
 - libav
 - ffmpeg
 
@@ -56,7 +56,7 @@ if pip2.7 list | grep -i pycrypt &> /dev/null; then pip2.7 install pycrypt --upg
 ``` 
 **Youtube-dl**
 ``` bash
-if youtube-dl --version &> /dev/null; then brew upgrade youtube-dl; else brew install youtube-dl; fi
+if yt-dlp --version &> /dev/null; then brew upgrade yt-dlp; else brew install yt-dlp/taps/yt-dlp; fi
 ``` 
 **LibAV**
 ``` bash
